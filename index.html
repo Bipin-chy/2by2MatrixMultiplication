@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix multiplication</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix multiplication</h1>
+        <div class="row">
+            <div class="col">
+                
+                <h3>About the method</h3>
+                <p style="font-weight: 600;">To calculate Matrix Multiplication Method you need to do following steps:</p>
+                <ol>
+                    <li>The number of columns of the 1st matrix must equal the number of rows of the 2nd matrix.</li>
+                    <li>And the result will have the same number of rows as the 1st matrix, and the same number of columns as the 2nd matrix.</li>
+                    <li>The following row operations are performed on augmented matrix when required: 
+                        <ul>
+                            <li>Multiply row of first matrix with the column of second matrix.</li>
+                            <li>After multiplying add it.</li>
+                            <li>Replace a row with the result of multiplication and addition.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="btn">
+                    <button id="calculate">Calculate</button>
+                </div>
+               
+            </div>
+
+            <div class="col result">
+                
+                <h3 id="resultHeading">Result Matrix Multiplication</h3>
+                <table id="data">
+                   
+                </table>                
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
